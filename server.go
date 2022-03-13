@@ -14,7 +14,7 @@ func main() {
 	configs := configs.GetConfigs()
 	listen_port := configs.GetString("WEBSERVER_PORT")
 
-	routers.ExamRouter(app)
+	routers.IndexRouter(app)
 
 	app.Run(":" + listen_port)
 }
