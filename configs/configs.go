@@ -2,7 +2,7 @@ package configs
 
 import (
 	"github.com/spf13/viper"
-	lib "github.com/tahadostifam/gingo/lib"
+	lib "$1/lib"
 )
 
 var default_configs string = lib.CWD() + "/web_server/configs/conf.yml"
