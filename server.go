@@ -1,9 +1,10 @@
 package main
 
 import (
+	"$1/configs"
+	routers "$1/routes"
+
 	"github.com/gin-gonic/gin"
-	"github.com/tahadostifam/gingo/web_server/configs"
-	routers "github.com/tahadostifam/gingo/web_server/routes"
 )
 
 var app *gin.Engine
