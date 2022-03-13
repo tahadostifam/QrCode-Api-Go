@@ -5,7 +5,7 @@ import (
 	lib "$1/lib"
 )
 
-var default_configs string = lib.CWD() + "/web_server/configs/conf.yml"
+var default_configs string = lib.CWD() + "/configs/conf.yml"
 
 func InitConf() *viper.Viper {
 	vi := viper.New()
