@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"strings"
 
-	models "fast-gin-go/models"
+	models "$1/models"
 
 	"github.com/gin-gonic/gin"
 )
