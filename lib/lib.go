@@ -1,11 +1,16 @@
 package lib
 
-import "os"
+import (
+	"fmt"
+	"os"
+)
 
 func CWD() string {
 	cwd, cwderr := os.Getwd()
 	if cwderr != nil {
-		panic("An error occurred on getting cwd")
+		fmt.Println("An error occurred on getting cwd")
+		os.Exit(1)
+		return ""
 	} else {
 		return cwd
 	}
