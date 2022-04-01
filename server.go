@@ -1,8 +1,8 @@
 package main
 
 import (
-	"$1/configs"
-	routers "$1/routes"
+	"QrCode-Api/configs"
+	routers "QrCode-Api/routes"
 
 	"github.com/gin-gonic/gin"
 )
@@ -14,7 +14,7 @@ func main() {
 	configs := configs.GetConfigs()
 	listen_port := configs.GetString("WEBSERVER_PORT")
 
-	routers.IndexRouter(app)
+	routers.QRCodeRouter(app)
 
 	app.Run(":" + listen_port)
 }

@@ -2,7 +2,7 @@ package configs
 
 import (
 	"github.com/spf13/viper"
-	lib "$1/lib"
+	lib "QrCode-Api/lib"
 )
 
 var default_configs string = lib.CWD() + "/configs/conf.yml"
